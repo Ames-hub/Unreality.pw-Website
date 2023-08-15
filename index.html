@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Unreality.pw</title>
+    <title>Unreality.pw | Discord Bot</title>
     <style>
         body {
             background-color: #3a383e;
@@ -28,12 +28,25 @@
             text-align: center;
         }
 
+        #discord_iframe {
+            position: absolute;
+            width: 25%;
+            min-height: 300px;
+            border: none;
+            /* Centers the iframe */
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            padding: 0;
+        }
+
         #sub_splash2 {
             text-align: center;
         }
 
         .out_of_landing_page {
-            padding: 0px;
+            /* Makes the borders fade to transparent */
+            position: relative;
         }
     </style>
 </head>
@@ -42,16 +55,15 @@
         <div id="splash_title">
             <h1 id="sub_splash1">Unreality.pw</h1>
             <h2 id="sub_splash2">Accurate, Fast, Customizable,<br>Done right.</h2>
+            <iframe id="discord_iframe" src="https://discord.com/widget?id=1057496622138929172&theme=dark"></iframe>
         </div>
-    </div>
+        <div class="landing_splash_buttons" id="splash_buttons">
+            <a id="splash_invite" href="https://discord.com/oauth2/authorize?client_id=1057496622138929172&scope=bot&permissions=8"><button>Invite</button></a>
+            <a id="splash_support" href="https://discord.gg/HkKAsgvCzt"><button>Support</button></a>
+        </div>
     <div class="out_of_landing_page">
         <div>
-            <iframe src="https://discord.com/widget?id=1057496622138929172&theme=dark" 
-                    width="25%" 
-                    height="30%" 
-                    allowtransparency="true" 
-                    frameborder="0">
-            </iframe>
+            
         </div>
     </div>
 </body>
